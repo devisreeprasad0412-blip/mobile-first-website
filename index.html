@@ -10,16 +10,19 @@
   .hero{padding:20px;text-align:center;background:#fcefee;}
   .hero h1{margin:12px 0;font-size:1.8rem;}
   .hero p{color:#444;}
+  .hero img{max-width:100%;border-radius:12px;margin-top:12px;box-shadow:0 4px 10px rgba(0,0,0,0.1);}
   .section{padding:20px;}
   .features{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
   .feature{background:#fff;padding:12px;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,0.1);}
   .feature h3{margin:0;font-size:1.1rem;}
   .feature p{margin:6px 0 0;font-size:0.9rem;color:#555;}
   .menu{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px;}
-  .dish{background:#fff;padding:12px;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,0.08);}
+  .dish{background:#fff;padding:12px;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,0.08);text-align:center;}
+  .dish img{max-width:100%;border-radius:8px;margin-bottom:8px;}
   .dish h4{margin:0 0 4px;}
   .price{font-weight:bold;color:#e63946;}
-  button{padding:8px 16px;background:#e63946;color:#fff;border:none;border-radius:8px;font-size:1rem;cursor:pointer;}
+  button{padding:10px 20px;background:#e63946;color:#fff;border:none;border-radius:8px;font-size:1rem;cursor:pointer;}
+  button:hover{background:#c72c3b;}
   footer{text-align:center;padding:14px;font-size:0.9rem;color:#555;background:#f9fafb;}
 </style>
 </head>
@@ -30,6 +33,7 @@
 <section class="hero">
   <h1>Delicious Meals, Anytime</h1>
   <p>Your favorite dishes crafted with love and delivered hot.</p>
+  <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=1000" alt="Restaurant Food Banner">
 </section>
 
 <section class="section">
@@ -45,10 +49,26 @@
 <section class="section">
   <h2>Menu & Prices</h2>
   <div class="menu">
-    <div class="dish"><h4>Margherita Pizza</h4><div class="price">$12</div></div>
-    <div class="dish"><h4>Caesar Salad</h4><div class="price">$8</div></div>
-    <div class="dish"><h4>Pasta Alfredo</h4><div class="price">$14</div></div>
-    <div class="dish"><h4>Chocolate Cake</h4><div class="price">$6</div></div>
+    <div class="dish">
+      <img src="https://images.unsplash.com/photo-1601924582971-c9fbcf4b4e04?w=600" alt="Margherita Pizza">
+      <h4>Margherita Pizza</h4>
+      <div class="price">$12</div>
+    </div>
+    <div class="dish">
+      <img src="https://images.unsplash.com/photo-1565895405130-8f8a2f93d03f?w=600" alt="Caesar Salad">
+      <h4>Caesar Salad</h4>
+      <div class="price">$8</div>
+    </div>
+    <div class="dish">
+      <img src="https://images.unsplash.com/photo-1603133872879-94a3f2f12e4f?w=600" alt="Pasta Alfredo">
+      <h4>Pasta Alfredo</h4>
+      <div class="price">$14</div>
+    </div>
+    <div class="dish">
+      <img src="https://images.unsplash.com/photo-1605478449828-b56e92fba3a2?w=600" alt="Chocolate Cake">
+      <h4>Chocolate Cake</h4>
+      <div class="price">$6</div>
+    </div>
   </div>
   <div style="margin-top:14px;text-align:center">
     <button onclick="alert('Order placed!')">Order Now</button>
