@@ -3,52 +3,59 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>SmartPhone X — Mobile Website</title>
+<title>Foodie Haven — Restaurant Website</title>
 <style>
-  body{margin:0;font-family:sans-serif;background:#f9fafb;color:#222;}
-  header{background:#111;color:#fff;text-align:center;padding:16px;font-size:1.4rem;font-weight:bold;}
-  .hero{padding:20px;text-align:center;}
-  .hero img{width:180px;}
-  .hero h1{margin:12px 0 8px;font-size:1.6rem;}
-  .hero p{color:#555;}
+  body{margin:0;font-family:sans-serif;background:#fff;color:#222;}
+  header{background:#e63946;color:#fff;text-align:center;padding:16px;font-size:1.5rem;font-weight:bold;}
+  .hero{padding:20px;text-align:center;background:#fcefee;}
+  .hero h1{margin:12px 0;font-size:1.8rem;}
+  .hero p{color:#444;}
   .section{padding:20px;}
   .features{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
   .feature{background:#fff;padding:12px;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,0.1);}
   .feature h3{margin:0;font-size:1.1rem;}
   .feature p{margin:6px 0 0;font-size:0.9rem;color:#555;}
-  .pricing{text-align:center;}
-  .price{font-size:1.8rem;font-weight:800;color:#e63946;margin:12px 0;}
-  button{padding:10px 20px;background:#e63946;color:#fff;border:none;border-radius:8px;font-size:1rem;cursor:pointer;}
-  footer{text-align:center;padding:14px;font-size:0.9rem;color:#555;}
+  .menu{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px;}
+  .dish{background:#fff;padding:12px;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,0.08);}
+  .dish h4{margin:0 0 4px;}
+  .price{font-weight:bold;color:#e63946;}
+  button{padding:8px 16px;background:#e63946;color:#fff;border:none;border-radius:8px;font-size:1rem;cursor:pointer;}
+  footer{text-align:center;padding:14px;font-size:0.9rem;color:#555;background:#f9fafb;}
 </style>
 </head>
 <body>
 
-<header>SmartPhone X</header>
+<header>Foodie Haven</header>
 
 <section class="hero">
-  <img src="https://via.placeholder.com/180x180?text=Phone" alt="Phone">
-  <h1>Next-Gen Smartphone</h1>
-  <p>Powerful performance. Stunning display. Affordable price.</p>
+  <h1>Delicious Meals, Anytime</h1>
+  <p>Your favorite dishes crafted with love and delivered hot.</p>
 </section>
 
 <section class="section">
-  <h2>Features</h2>
+  <h2>Why Choose Us?</h2>
   <div class="features">
-    <div class="feature"><h3>⚡ Fast Processor</h3><p>Octa-core 3.0GHz chipset</p></div>
-    <div class="feature"><h3>📷 Dual Camera</h3><p>48MP + 12MP lenses</p></div>
-    <div class="feature"><h3>🔋 Long Battery</h3><p>5000mAh with fast charging</p></div>
-    <div class="feature"><h3>💾 Storage</h3><p>128GB / 256GB options</p></div>
+    <div class="feature"><h3>🥗 Fresh Ingredients</h3><p>Locally sourced daily.</p></div>
+    <div class="feature"><h3>🚚 Fast Delivery</h3><p>Hot meals at your doorstep.</p></div>
+    <div class="feature"><h3>👩‍🍳 Expert Chefs</h3><p>World-class cooking skills.</p></div>
+    <div class="feature"><h3>💳 Easy Payments</h3><p>Secure and flexible options.</p></div>
   </div>
 </section>
 
-<section class="section pricing">
-  <h2>Price</h2>
-  <div class="price">$699</div>
-  <button onclick="alert('Order placed!')">Buy Now</button>
+<section class="section">
+  <h2>Menu & Prices</h2>
+  <div class="menu">
+    <div class="dish"><h4>Margherita Pizza</h4><div class="price">$12</div></div>
+    <div class="dish"><h4>Caesar Salad</h4><div class="price">$8</div></div>
+    <div class="dish"><h4>Pasta Alfredo</h4><div class="price">$14</div></div>
+    <div class="dish"><h4>Chocolate Cake</h4><div class="price">$6</div></div>
+  </div>
+  <div style="margin-top:14px;text-align:center">
+    <button onclick="alert('Order placed!')">Order Now</button>
+  </div>
 </section>
 
-<footer>© 2025 SmartPhone X · All Rights Reserved</footer>
+<footer>© 2025 Foodie Haven · 123 Flavor Street</footer>
 
 </body>
 </html>
