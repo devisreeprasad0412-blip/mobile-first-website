@@ -4,9 +4,27 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Foodie Haven — Restaurant Website</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
 <style>
-  body{margin:0;font-family:sans-serif;background:#fff;color:#222;}
-  header{background:#e63946;color:#fff;text-align:center;padding:16px;font-size:1.5rem;font-weight:bold;animation: fadeDown 1s ease;}
+  body{
+    margin:0;
+    font-family:sans-serif;
+    background:#fff url("https://www.transparenttextures.com/patterns/food.png");
+    color:#222;
+  }
+  header{
+    background:#e63946;
+    color:#fff;
+    text-align:center;
+    padding:16px;
+    font-size:1.5rem;
+    font-weight:bold;
+    animation: fadeDown 1s ease;
+    font-family:'Pacifico', cursive;
+  }
   
   /* Animation keyframes */
   @keyframes fadeUp {
@@ -18,36 +36,77 @@
     to {opacity:1; transform:translateY(0);}
   }
   
-  /* Apply animations to headings */
+  /* Apply Pacifico font to headings */
   h1, h2, h3, h4 {
     animation: fadeUp 1s ease;
+    font-family:'Pacifico', cursive;
   }
   h1 {animation-delay:0.2s;}
   h2 {animation-delay:0.4s;}
   h3, h4 {animation-delay:0.6s;}
   
   /* Sections */
-  .hero{padding:20px;text-align:center;background:#fcefee;}
+  .hero{
+    padding:20px;
+    text-align:center;
+    background:rgba(252,239,238,0.9);
+    border-radius:8px;
+    margin:12px;
+  }
   .hero h1{margin:12px 0;font-size:1.8rem;}
   .hero p{color:#444;animation: fadeUp 1s ease 0.8s;}
-  .hero img{max-width:100%;border-radius:12px;margin-top:12px;box-shadow:0 4px 10px rgba(0,0,0,0.1);animation: fadeUp 1s ease 1s;}
+  .hero img{
+    max-width:100%;
+    border-radius:12px;
+    margin-top:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    animation: fadeUp 1s ease 1s;
+  }
   
   .section{padding:20px;}
   .features{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
-  .feature{background:#fff;padding:12px;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,0.1);animation: fadeUp 1s ease;}
+  .feature{
+    background:#fff;
+    padding:12px;
+    border-radius:10px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.1);
+    animation: fadeUp 1s ease;
+  }
   .feature h3{margin:0;font-size:1.1rem;}
   .feature p{margin:6px 0 0;font-size:0.9rem;color:#555;}
   
   .menu{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px;}
-  .dish{background:#fff;padding:12px;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,0.08);text-align:center;animation: fadeUp 1s ease;}
+  .dish{
+    background:#fff;
+    padding:12px;
+    border-radius:10px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.08);
+    text-align:center;
+    animation: fadeUp 1s ease;
+  }
   .dish img{max-width:100%;border-radius:8px;margin-bottom:8px;}
   .dish h4{margin:0 0 4px;}
   .price{font-weight:bold;color:#e63946;}
   
-  button{padding:10px 20px;background:#e63946;color:#fff;border:none;border-radius:8px;font-size:1rem;cursor:pointer;}
+  button{
+    padding:10px 20px;
+    background:#e63946;
+    color:#fff;
+    border:none;
+    border-radius:8px;
+    font-size:1rem;
+    cursor:pointer;
+    font-family:'Pacifico', cursive;
+  }
   button:hover{background:#c72c3b;}
   
-  footer{text-align:center;padding:14px;font-size:0.9rem;color:#555;background:#f9fafb;}
+  footer{
+    text-align:center;
+    padding:14px;
+    font-size:0.9rem;
+    color:#555;
+    background:#f9fafb;
+  }
 </style>
 </head>
 <body>
