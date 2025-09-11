@@ -90,7 +90,6 @@
     margin-top:12px;
     box-shadow:0 4px 10px rgba(0,0,0,0.1);
     animation: fadeUp 1s ease 1s;
-    transition:opacity 1s ease;
   }
   .section{padding:40px 20px;}
   .features{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
@@ -102,8 +101,15 @@
     animation: fadeUp 1s ease;
     transition:transform 0.3s ease;
   }
-  .feature:hover{transform:scale(1.03);}
-  .feature h3{margin:0;font-size:1.1rem;transition:all 0.3s ease;}
+  .feature:hover{
+    transform:scale(1.03);
+  }
+  .feature h3{
+    margin:0;
+    font-size:1.1rem;
+    transition:all 0.3s ease;
+  }
+  /* Highlight effect when hovering over feature title */
   .feature h3:hover{
     color:#e63946;
     text-decoration:underline;
@@ -204,7 +210,7 @@
 <section id="home" class="hero">
   <h1>Delicious Meals, Anytime</h1>
   <p>Your favorite dishes crafted with love and delivered hot.</p>
-  <img id="hero-img" src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=1000" alt="Restaurant Food Banner">
+  <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=1000" alt="Restaurant Food Banner">
 </section>
 
 <!-- Search Bar Section -->
@@ -246,27 +252,6 @@
 </section>
 
 <footer>© 2025 Foodie Haven · All Rights Reserved</footer>
-
-<!-- Slideshow Script -->
-<script>
-  const heroImg = document.getElementById("hero-img");
-  const images = [
-    "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=1000",
-    "https://images.unsplash.com/photo-1603133872879-94a3f2f12e4f?w=1000",
-    "https://images.unsplash.com/photo-1601924582971-c9fbcf4b4e04?w=1000",
-    "https://images.unsplash.com/photo-1565895405130-8f8a2f93d03f?w=1000"
-  ];
-  let index = 0;
-
-  setInterval(() => {
-    index = (index + 1) % images.length;
-    heroImg.style.opacity = 0;
-    setTimeout(() => {
-      heroImg.src = images[index];
-      heroImg.style.opacity = 1;
-    }, 500);
-  }, 3000); // change every 3 seconds
-</script>
 
 </body>
 </html>
