@@ -46,7 +46,7 @@
     border-radius:6px;
     transition: all 0.3s ease;
     cursor:pointer;
-    font-family:'Poppins', sans-serif; /* NEW FONT */
+    font-family:'Poppins', sans-serif;
     display:flex;
     align-items:center;
     gap:6px;
@@ -115,7 +115,58 @@
     transition: all 0.3s ease;
   }
   button:hover{background:#c72c3b;transform:scale(1.05);}
-  
+
+  /* Search Order Section */
+  .search-section{
+    text-align:center;
+    padding:30px 20px;
+    background:#fff3e0;
+    margin:20px auto;
+    border-radius:10px;
+    width:80%;
+    max-width:600px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+    animation: fadeUp 1s ease;
+  }
+  .search-section h2{
+    font-family:'Pacifico', cursive;
+    color:#e63946;
+    margin-bottom:16px;
+  }
+  .search-box{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+  }
+  .search-box input{
+    flex:1;
+    padding:10px 14px;
+    font-size:1rem;
+    border:2px solid #e63946;
+    border-radius:8px;
+    font-family:'Poppins', sans-serif;
+    outline:none;
+  }
+  .search-box input:focus{
+    border-color:#c72c3b;
+    box-shadow:0 0 5px rgba(231,57,70,0.5);
+  }
+  .search-box button{
+    font-family:'Pacifico', cursive;
+    background:#ff914d;
+    border:none;
+    padding:10px 18px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:1rem;
+    color:#fff;
+    transition:all 0.3s ease;
+  }
+  .search-box button:hover{
+    background:#e67e22;
+    transform:scale(1.05);
+  }
+
   footer{
     text-align:center;
     padding:14px;
@@ -142,6 +193,15 @@
   <h1>Delicious Meals, Anytime</h1>
   <p>Your favorite dishes crafted with love and delivered hot.</p>
   <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=1000" alt="Restaurant Food Banner">
+</section>
+
+<!-- Search Bar Section -->
+<section class="search-section">
+  <h2>🍕 Order Your Favorite Item</h2>
+  <div class="search-box">
+    <input type="text" placeholder="Search your favorite dish...">
+    <button onclick="alert('Order placed for your favorite item!')">Order Now</button>
+  </div>
 </section>
 
 <!-- About Us -->
