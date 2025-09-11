@@ -6,7 +6,7 @@
 <title>Foodie Haven — Restaurant Website</title>
 
 <!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@500&display=swap" rel="stylesheet">
 
 <style>
   body{
@@ -14,7 +14,7 @@
     font-family:sans-serif;
     background:#fff url("https://www.transparenttextures.com/patterns/food.png");
     color:#222;
-    scroll-behavior:smooth; /* smooth scrolling */
+    scroll-behavior:smooth;
   }
   header{
     background:#e63946;
@@ -46,6 +46,15 @@
     border-radius:6px;
     transition: all 0.3s ease;
     cursor:pointer;
+    font-family:'Poppins', sans-serif; /* NEW FONT */
+    display:flex;
+    align-items:center;
+    gap:6px;
+  }
+  nav a img{
+    width:18px;
+    height:18px;
+    border-radius:4px;
   }
   nav a:hover{
     background:#fff;
@@ -121,10 +130,10 @@
 <header>
   Foodie Haven
   <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About Us</a>
-    <a href="#specials">Today’s Specials</a>
-    <a href="#contact">Contact Us</a>
+    <a href="#home"><img src="https://img.icons8.com/emoji/48/000000/house-emoji.png" alt="Home"> Home</a>
+    <a href="#about"><img src="https://img.icons8.com/emoji/48/000000/open-book.png" alt="About"> About Us</a>
+    <a href="#specials"><img src="https://img.icons8.com/emoji/48/000000/fork-and-knife-with-plate.png" alt="Specials"> Today’s Specials</a>
+    <a href="#contact"><img src="https://img.icons8.com/emoji/48/000000/telephone.png" alt="Contact"> Contact Us</a>
   </nav>
 </header>
 
